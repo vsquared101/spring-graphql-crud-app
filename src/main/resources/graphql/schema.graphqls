@@ -6,4 +6,11 @@ type Customer {
 
 type Query {
     findAll: [Customer]
+    findById(id: ID!): Customer
+}
+
+type Mutation {
+    save(id: ID!, firstName: String!, lastName: String!): Customer
+    update(id: ID!, firstName: String, lastName: String): Customer
+    deleteById(id: ID!): Customer
 }

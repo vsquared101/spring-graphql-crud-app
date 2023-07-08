@@ -32,4 +32,8 @@ public class Customer {
         return "Customer [id=" + id + ", firstName=" + firstName +
                 ", lastName=" + lastName + "]";
     }
+
+    public void setId(int i) {
+        this.id = i;
+    }
 }
